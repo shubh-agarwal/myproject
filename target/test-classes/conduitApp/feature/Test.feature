@@ -1,12 +1,20 @@
-Feature: to demo the UI automation
 
+Feature: Tests for the home page
 
-Scenario:
-    Given driver 'https://katalon-demo-cura.herokuapp.com/'
-    When submit().click('#btn-make-appointment')
-    Then match driver.url == 'https://katalon-demo-cura.herokuapp.com/profile.php#login'
-    # * screenshot()
-    * def bytes = screenshot(false)
-    * def file = karate.write(bytes, 'users/test.png')
-    * print 'screenshot saved to:', file
+Background:Define URL 
+    Given url 'https://api.realworld.io/api'
+   
+
+Scenario:Get all tags
+    Given path 'tags'
+    When method Get
+    Then status 200
+    Then match response.tags contains 'welcome'
+    
+Scenario:Get 10 articles from the page
+    Given params {limit:10,offset:0}
+    Given path 'articles'
+    When method Get
+    Then status 200
+    * print "hello"
 
