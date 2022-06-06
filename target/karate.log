@@ -1,0 +1,193 @@
+20:49:18.455 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+20:49:18.467 [main] DEBUG com.intuit.karate.Suite - waiting for 2 features to complete
+20:49:19.612 [pool-1-thread-3] INFO  com.intuit.karate - karate.env system property was: null 
+20:49:19.612 [pool-1-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+20:49:19.612 [pool-1-thread-2] INFO  com.intuit.karate - karate.env system property was: null 
+20:49:19.659 [pool-1-thread-3] WARN  com.intuit.karate - type was null, defaulting to 'chrome'
+20:49:19.675 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - found / verified free local port: 9222
+20:49:19.679 [chrome_1654487359663] DEBUG c.i.k.driver.chrome_1654487359663 - command: [/Applications/Google Chrome.app/Contents/MacOS/Google Chrome, --remote-debugging-port=9222, --no-first-run, --user-data-dir=/Users/agarwals/myproject/target/chrome_1654487359663, --disable-popup-blocking], working dir: target/chrome_1654487359663
+20:49:19.686 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - poll attempt #0 for port to be ready - localhost:9222
+20:49:19.921 [pool-1-thread-1] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/tags
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:49:19.921 [pool-1-thread-2] DEBUG com.intuit.karate - request:
+1 > GET https://api.realworld.io/api/articles?offset=0&limit=10
+1 > Host: api.realworld.io
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:49:20.022 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - poll attempt #1 for port to be ready - localhost:9222
+20:49:20.276 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - poll attempt #2 for port to be ready - localhost:9222
+20:49:20.531 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - poll attempt #3 for port to be ready - localhost:9222
+20:49:20.679 [pool-1-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 756
+1 < 200
+1 < Date: Mon, 06 Jun 2022 03:49:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"44-n3KTH46TuxTRVoOC3mQj0MsB858"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=pyfan4c3oowPtmH%2BBrUitlY1vKj5psmLKgMieFLby%2FFDtxGubpimv7LdLYT%2FUxwtUmFPvLTyLisWnOBSR7ZNFo4OCz0Gxt68y3repTHFiFCVa2UH5rDPYTI%2BjIgaYHLDfa16"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 716e2d733c737d68-LAX
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"tags":["welcome","implementations","introduction","codebaseShow"]}
+20:49:20.787 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - poll attempt #4 for port to be ready - localhost:9222
+20:49:20.829 [pool-1-thread-2] DEBUG com.intuit.karate - response time in milliseconds: 906
+1 < 200
+1 < Date: Mon, 06 Jun 2022 03:49:20 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Transfer-Encoding: chunked
+1 < Connection: keep-alive
+1 < X-Powered-By: Express
+1 < Access-Control-Allow-Origin: *
+1 < Etag: W/"6de-m/R94ONElg2MbPjPkPToMESMZVc"
+1 < Via: 1.1 vegur
+1 < CF-Cache-Status: DYNAMIC
+1 < Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+1 < Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=VvmkKnSpsiJ%2BbDDWBfWqshSL8rRD18sM354h3Ksovjc09HxHHwrNViMCNr43j%2BDHmfs7yqGT%2FYSMhsPUjhfQIfk4wI%2FdLow9bRPcn8XgXOXBP7YvK8v6WPyjYmvXCnmHkZfY"}],"group":"cf-nel","max_age":604800}
+1 < NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+1 < Server: cloudflare
+1 < CF-RAY: 716e2d733d2e7b0e-LAX
+1 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+{"articles":[{"slug":"Create-a-new-implementation-1","title":"Create a new implementation","description":"join the community by creating a new implementation","body":"Share your knowledge and enpower the community by creating a new implementation","tagList":["implementations"],"createdAt":"2021-11-24T12:11:08.212Z","updatedAt":"2021-11-24T12:11:08.212Z","favorited":false,"favoritesCount":2596,"author":{"username":"Gerome","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"Explore-implementations-1","title":"Explore implementations","description":"discover the implementations created by the RealWorld community","body":"Over 100 implementations have been created using various languages, libraries, and frameworks.\n\nExplore them on CodebaseShow.","tagList":["codebaseShow","implementations"],"createdAt":"2021-11-24T12:11:07.952Z","updatedAt":"2021-11-24T12:11:07.952Z","favorited":false,"favoritesCount":1505,"author":{"username":"Gerome","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}},{"slug":"Welcome-to-RealWorld-project-1","title":"Welcome to RealWorld project","description":"Exemplary fullstack Medium.com clone powered by React, Angular, Node, Django, and many more","body":"See how the exact same Medium.com clone (called Conduit) is built using different frontends and backends. Yes, you can mix and match them, because they all adhere to the same API spec","tagList":["welcome","introduction"],"createdAt":"2021-11-24T12:11:07.557Z","updatedAt":"2021-11-24T12:11:07.557Z","favorited":false,"favoritesCount":1058,"author":{"username":"Gerome","bio":null,"image":"https://api.realworld.io/images/demo-avatar.png","following":false}}],"articlesCount":3}
+20:49:20.831 [pool-1-thread-2] INFO  com.intuit.karate - [print] hello 
+20:49:21.040 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - poll attempt #5 for port to be ready - localhost:9222
+20:49:21.291 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - poll attempt #6 for port to be ready - localhost:9222
+20:49:21.543 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - poll attempt #7 for port to be ready - localhost:9222
+20:49:21.692 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 2 (1 remaining) classpath:conduitApp/feature/HomePage.feature
+20:49:21.794 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - poll attempt #8 for port to be ready - localhost:9222
+20:49:21.819 [chrome_1654487359663-out] DEBUG c.i.k.driver.chrome_1654487359663 - 
+20:49:21.821 [chrome_1654487359663-out] DEBUG c.i.k.driver.chrome_1654487359663 - DevTools listening on ws://127.0.0.1:9222/devtools/browser/aa72fb0e-bf67-4162-b6ff-1412102e360c
+20:49:22.074 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - poll attempt #9 for port to be ready - localhost:9222
+20:49:22.109 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:49:22.971 [chrome_1654487359663-out] DEBUG c.i.k.driver.chrome_1654487359663 - objc[2065]: Class WebSwapCGLLayer is implemented in both /System/Library/Frameworks/WebKit.framework/Versions/A/Frameworks/WebCore.framework/Versions/A/Frameworks/libANGLE-shared.dylib (0x7ffa59b13318) and /Applications/Google Chrome.app/Contents/Frameworks/Google Chrome Framework.framework/Versions/102.0.5005.61/Libraries/libGLESv2.dylib (0x1127dc290). One of the two will be used. Which one is undefined.
+20:49:23.633 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 1522
+1 < 200
+1 < Content-Length: 375
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/D939B02810191AF555690A016B822EE6",
+   "id": "D939B02810191AF555690A016B822EE6",
+   "title": "",
+   "type": "page",
+   "url": "chrome://welcome/?variant=everywhere",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/D939B02810191AF555690A016B822EE6"
+} ]
+
+20:49:23.634 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - ready to accept http connections after 1530 ms - http://localhost:9222/json
+20:49:23.635 [pool-1-thread-3] DEBUG com.intuit.karate - request:
+1 > GET http://localhost:9222/json
+1 > Host: localhost:9222
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.13 (Java/1.8.0_292)
+1 > Accept-Encoding: gzip,deflate
+
+
+20:49:23.657 [pool-1-thread-3] DEBUG com.intuit.karate - response time in milliseconds: 22
+1 < 200
+1 < Content-Length: 2143
+1 < Content-Type: application/json; charset=UTF-8
+[ {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/D00F14EAE5BF21C68C32A9BAB8B45478",
+   "id": "D00F14EAE5BF21C68C32A9BAB8B45478",
+   "title": "CryptoTokenExtension",
+   "type": "background_page",
+   "url": "chrome-extension://kmendfapggjehodndflmmgagdbamhnfd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/D00F14EAE5BF21C68C32A9BAB8B45478"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/CD2935AE01BECF4A3DDB65F1AA5B92CB",
+   "id": "CD2935AE01BECF4A3DDB65F1AA5B92CB",
+   "title": "Google Network Speech",
+   "type": "background_page",
+   "url": "chrome-extension://neajdppkdcdipfabeoofebfddakdcjhd/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/CD2935AE01BECF4A3DDB65F1AA5B92CB"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/FBCC0E2C40E93257BC3395CE0DBB905D",
+   "id": "FBCC0E2C40E93257BC3395CE0DBB905D",
+   "title": "Feedback",
+   "type": "background_page",
+   "url": "chrome-extension://gfdkimpbcpahaombhbimeihdjnejgicl/_generated_background_page.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/FBCC0E2C40E93257BC3395CE0DBB905D"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/2AE0D8EEC186B633907AB077F8E48221",
+   "id": "2AE0D8EEC186B633907AB077F8E48221",
+   "title": "Google Hangouts",
+   "type": "background_page",
+   "url": "chrome-extension://nkeimhogjdpnpccoofpliimaahmaaome/background.html",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/2AE0D8EEC186B633907AB077F8E48221"
+}, {
+   "description": "",
+   "devtoolsFrontendUrl": "/devtools/inspector.html?ws=localhost:9222/devtools/page/D939B02810191AF555690A016B822EE6",
+   "id": "D939B02810191AF555690A016B822EE6",
+   "title": "",
+   "type": "page",
+   "url": "chrome://welcome/?variant=everywhere",
+   "webSocketDebuggerUrl": "ws://localhost:9222/devtools/page/D939B02810191AF555690A016B822EE6"
+} ]
+
+20:49:23.688 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - root frame id: D939B02810191AF555690A016B822EE6
+20:49:24.135 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client connected
+20:49:24.136 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - >> {"id":1,"method":"Target.attachToTarget","params":{"targetId":"D939B02810191AF555690A016B822EE6","flatten":true}}
+20:49:24.178 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Target.attachedToTarget","params":{"sessionId":"0E47299BF60F500ACCC8D37520D99600","targetInfo":{"targetId":"D939B02810191AF555690A016B822EE6","type":"page","title":"Welcome to Chrome","url":"chrome://welcome/","attached":true,"canAccessOpener":false,"browserContextId":"B3B2A401BE9979010506502BCC1D4F98"},"waitingForDebugger":false}}
+20:49:24.179 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"id":1,"result":{"sessionId":"0E47299BF60F500ACCC8D37520D99600"}}
+20:49:24.194 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - >> {"id":2,"sessionId":"0E47299BF60F500ACCC8D37520D99600","method":"Target.activateTarget","params":{"targetId":"D939B02810191AF555690A016B822EE6"}}
+20:49:24.204 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"id":2,"result":{},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:24.221 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - >> {"id":3,"sessionId":"0E47299BF60F500ACCC8D37520D99600","method":"Page.enable"}
+20:49:24.237 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"id":3,"result":{},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:24.240 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - >> {"id":4,"sessionId":"0E47299BF60F500ACCC8D37520D99600","method":"Runtime.enable"}
+20:49:24.255 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"chrome://welcome","name":"","uniqueId":"3575921580634559598.-4890749462398409210","auxData":{"isDefault":true,"type":"default","frameId":"D939B02810191AF555690A016B822EE6"}}},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:24.263 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"id":4,"result":{},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:24.269 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - >> {"id":5,"sessionId":"0E47299BF60F500ACCC8D37520D99600","method":"Browser.getWindowForTarget","params":{"targetId":"D939B02810191AF555690A016B822EE6"}}
+20:49:24.275 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"id":5,"result":{"windowId":1,"bounds":{"left":22,"top":47,"width":1200,"height":1051,"windowState":"normal"}},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:24.436 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - >> {"id":6,"sessionId":"0E47299BF60F500ACCC8D37520D99600","method":"Page.navigate","params":{"url":"https:\/\/katalon-demo-cura.herokuapp.com\/"}}
+20:49:24.903 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"id":6,"result":{"frameId":"D939B02810191AF555690A016B822EE6","loaderId":"70DF6A0FBEF30B1111DE518E16BB62D1"},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:24.905 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:24.908 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Page.frameStartedLoading","params":{"frameId":"D939B02810191AF555690A016B822EE6"},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:24.928 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:24.929 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Page.frameNavigated","params":{"frame":{"id":"D939B02810191AF555690A016B822EE6","loaderId":"70DF6A0FBEF30B1111DE518E16BB62D1","url":"https://katalon-demo-cura.herokuapp.com/","domainAndRegistry":"katalon-demo-cura.herokuapp.com","securityOrigin":"https://katalon-demo-cura.herokuapp.com","mimeType":"text/html","adFrameStatus":{"adFrameType":"none"},"secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":[]},"type":"Navigation"},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:24.930 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":1,"origin":"https://katalon-demo-cura.herokuapp.com","name":"","uniqueId":"7178199370099979379.-8125736169658495928","auxData":{"isDefault":true,"type":"default","frameId":"D939B02810191AF555690A016B822EE6"}}},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:25.238 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Page.domContentEventFired","params":{"timestamp":231784.026145},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:25.253 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - >> {"id":7,"sessionId":"0E47299BF60F500ACCC8D37520D99600","method":"Runtime.evaluate","params":{"expression":"document.querySelector(\"#btn-make-appointment\").click()","returnByValue":true}}
+20:49:25.262 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Page.frameScheduledNavigation","params":{"frameId":"D939B02810191AF555690A016B822EE6","delay":0,"reason":"anchorClick","url":"https://katalon-demo-cura.herokuapp.com/profile.php#login"},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:25.264 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Page.frameRequestedNavigation","params":{"frameId":"D939B02810191AF555690A016B822EE6","reason":"anchorClick","url":"https://katalon-demo-cura.herokuapp.com/profile.php#login","disposition":"currentTab"},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:25.265 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Page.frameClearedScheduledNavigation","params":{"frameId":"D939B02810191AF555690A016B822EE6"},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:25.266 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"id":7,"result":{"result":{"type":"undefined"}},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:25.368 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Runtime.executionContextsCleared","params":{},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:25.369 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Page.frameNavigated","params":{"frame":{"id":"D939B02810191AF555690A016B822EE6","loaderId":"181244FF4D9F2FA18A219C58D94ADB0D","url":"https://katalon-demo-cura.herokuapp.com/profile.php","urlFragment":"#login","domainAndRegistry":"katalon-demo-cura.herokuapp.com","securityOrigin":"https://katalon-demo-cura.herokuapp.com","mimeType":"text/html","adFrameStatus":{"adFrameType":"none"},"secureContextType":"Secure","crossOriginIsolatedContextType":"NotIsolated","gatedAPIFeatures":[]},"type":"Navigation"},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:25.369 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Runtime.executionContextCreated","params":{"context":{"id":2,"origin":"https://katalon-demo-cura.herokuapp.com","name":"","uniqueId":"-5929587557498616713.9036153207075148319","auxData":{"isDefault":true,"type":"default","frameId":"D939B02810191AF555690A016B822EE6"}}},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:25.399 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"method":"Page.domContentEventFired","params":{"timestamp":231784.183851},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:25.403 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - >> {"id":8,"sessionId":"0E47299BF60F500ACCC8D37520D99600","method":"Runtime.evaluate","params":{"expression":"document.location.href","returnByValue":true}}
+20:49:25.422 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"id":8,"result":{"result":{"type":"string","value":"https://katalon-demo-cura.herokuapp.com/profile.php#login"}},"sessionId":"0E47299BF60F500ACCC8D37520D99600"}
+20:49:25.431 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - >> {"id":9,"sessionId":"0E47299BF60F500ACCC8D37520D99600","method":"Page.captureScreenshot"}
+20:49:25.879 [nioEventLoopGroup-2-1] DEBUG c.i.k.driver.chrome_1654487359663 - << {"id":9,"result":{"data":"iVBORw0KGgoAAAANSUhEUgAACWAAAAeYCAYAAACls+xHAAABKmlDQ1BTa2lhAAAokX2RPUvDUBSGH0sXP8BBRUGHbHVRa79cdDBVi7i1CtUtTUMR2xrSiO5dHfQf6OoqToJzR0FwcnUXBNf63nRIQeq5vLnPeXNucs+9kFhAkUxDqx0G5ZJtVY9PLIbCcTs+o2MMft7NE95W/qkbFeN1r+Nq/pLCQD/XJ+vi2caArwzXBnxtODgsF8V34uXGENeG+DL0Q3HP1Lt+YPhDvNlqXrjxvpny2kcVzVVpiRLnGg2aeKxR4YxTHFGGPdKsSwWy0jY77JLDjrINZRllxci3yasyrxXGy6kuG59n9wm2Xvr9/nPsHdzAYwomXmMvdQvTi9C7953AiayklPBs+J7Tth9g5hMmu3Lnzet4bXwXI3q1/vRqsU8bl1VRJuq08Au/10y1/kfwpgAAIABJREFUeJzs3X2QlXX5+PFrFxbWIz9YlmXFVjGY0YxRUUcdTSdy1KbBB6JwnKFSS0ozhwnTCR8yQRttmulHZWWa40PClCORo1mKkxamqQPmEzGpa6Ir26KL4rjgLrvn98fvC0nn7NMFcpYvr9dM03Td5/7cV/8167v7rioWi8UAAAAAAAAAAABg0KorvQAAAAAAAAAAAMDuSoAFAAAAAAAAAACQJMACAAAAAAAAAABIEmABAAAAAAAAAAAkCbAAAAAAAAAAAACSBFgAAAAAAAAAAABJAiwAAAAAAAAAAIAkARYAAAAAAAAAAECSAAsAAAAAAAAAACBpeKUXAAAAAAAAAAAAerfo//650ivskb45b9qAfucNWAAAAAAAAAAAAEkCLAAAAAAAAAAAgCQBFgAAAAAAAAAAQJIACwAAAAAAAAAAIEmABQAAAAAAAAAAkCTAAgAAAAAAAAAASBJgAQAAAAAAAAAAJAmwAAAAAAAAAAAAkgRYAAAAAAAAAAAASQIsAAAAAAAAAACAJAEWAAAAAA ...
+20:49:25.887 [pool-1-thread-3] DEBUG com.intuit.karate - write to file: target/users/test.png
+20:49:25.890 [pool-1-thread-3] INFO  com.intuit.karate - [print] screenshot saved to: target/users/test.png 
+20:49:25.890 [pool-1-thread-3] DEBUG c.i.k.driver.chrome_1654487359663 - >> {"id":10,"sessionId":"0E47299BF60F500ACCC8D37520D99600","method":"Target.closeTarget","params":{"targetId":"D939B02810191AF555690A016B822EE6"}}
+20:49:25.895 [nioEventLoopGroup-2-1] DEBUG c.i.k.http.WebSocketClientHandler - websocket client disconnected
+20:49:25.912 [pool-1-thread-3] DEBUG com.intuit.karate.shell.Command - closing command: chrome_1654487359663
+20:49:26.085 [pool-2-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 2 of 2 (0 remaining) classpath:conduitApp/feature/Test.feature
