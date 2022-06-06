@@ -17,6 +17,8 @@ jobs:
            node -v 
            npm -v
            docker run -dit --name karate --rm -p 5900:5900 --cap-add=SYS_ADMIN -v "$PWD":/src ptrthomas/karate-chrome:1.1.0
+           docker exec -it -w /src karate mvn clean install 
+           docker exec -it -w /src karate mvn test
       - name: python Command 
         run: |
           import platform 
